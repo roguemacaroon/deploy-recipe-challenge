@@ -95,6 +95,7 @@ ul .descriptive-paragraph {
 }
 
 /* headings */
+h1,
 .heading-one {
   font-family: var(--heading-font);
   font-size: var(--font32);

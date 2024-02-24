@@ -1,0 +1,229 @@
+/* global */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* root */
+:root {
+  /* primary colors */
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-raspberry: hsl(332, 51%, 32%);
+  /* neutral colors */
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rose: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-grey: hsl(30, 18%, 87%);
+  --neutral-brown: hsl(30, 10%, 34%);
+  --neutral-charcoal: hsl(24, 5%, 18%);
+
+  /* font */
+  --heading-font: "Young Serif", sans-serif;
+  --main-font: "Outfit", sans-serif;
+
+  /* font sizes */
+  --font16: 1rem;
+  --font21: 1.313rem;
+  --font26: 1.625rem;
+  --font32: 2rem;
+  --font36: 2.25rem;
+  --font46: 2.875rem;
+
+  /* font weight */
+  --normal-weight: 400;
+  --heavy-weight: 600;
+  --heavier-weight: 700;
+
+  /* spacing */
+  --spacing5: 5px;
+  --spacing10: 10px;
+  --spacing15: 15px;
+  --spacing20: 20px;
+  --spacing30: 30px;
+  --spacing40: 40px;
+}
+
+li {
+  padding: 8px;
+  color: var(--neutral-brown);
+}
+
+/* wrapper */
+.wrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+
+/* Images */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* style classes */
+/* paragraphs */
+p {
+  font-size: var(--font16);
+  font-family: var(--main-font);
+  color: var(--neutral-brown);
+}
+
+.paragraph-heavy {
+  font-weight: var(--heavy-weight);
+}
+
+/* descriptive paragraph */
+.descriptive-paragraph {
+  font-size: var(--font21);
+  font-weight: var(--heavier-weight);
+  color: var(--primary-raspberry);
+}
+
+ul .descriptive-paragraph {
+  display: flex;
+}
+
+.nutrition-details .descriptive-paragraph {
+  color: var(--primary-nutmeg);
+  font-size: var(--font16);
+}
+
+/* headings */
+.heading-one {
+  font-family: var(--heading-font);
+  font-size: var(--font32);
+  font-weight: var(--normal-weight);
+}
+
+.heading-two {
+  margin-bottom: 0;
+  font-family: var(--heading-font);
+  font-size: var(--font26);
+  color: var(--primary-nutmeg);
+  font-weight: var(--normal-weight);
+}
+
+/* hr styles */
+hr {
+  background-color: var(--neutral-grey);
+  height: 1px;
+  border: none;
+}
+
+/* preparation */
+.preparation-section {
+  background-color: var(--neutral-rose);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing15);
+  font-family: var(--main-font);
+}
+
+.preparation-section .descriptive-paragraph {
+  margin-bottom: 0;
+  margin-left: var(--spacing10);
+}
+
+/* ingredients */
+.ingredients-list li {
+  padding: var(--spacing5);
+  font-family: var(--main-font);
+}
+
+/* instructions */
+.instructions-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 25px;
+}
+
+ol li::marker {
+  font-family: var(--main-font);
+  color: var(--primary-nutmeg);
+  font-weight: var(--heavier-weight);
+}
+
+/* nutrition section */
+.nutrition-details {
+  margin: 0 80px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 60%;
+}
+.nutrition-details p {
+  margin-top: 0;
+  text-align: center;
+  
+}
+/* footer */
+
+footer {
+  margin-top: var(--spacing10);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 875px) {
+  body {
+    background-color: var(--neutral-eggshell);
+  }
+  
+  .wrapper {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  /* card class only visible after media query */
+  .card {
+    margin: 0 auto;
+    margin-top: var(--spacing40);
+    width: 60%;
+    padding: var(--spacing30);
+    background-color: var(--neutral-white);
+    border-radius: var(--spacing10);
+    max-width: 1000px;
+  }
+
+  .card img {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: var(--spacing20);
+    margin: 0 auto;
+  }
+/* adjusting margins for nutrition details */
+  .nutrition-details {
+    margin: 0 80px 0 30px;
+     max-width: 50%;
+   }
+}
+@media screen and (min-width: 976px) {
+  /* increase heading size */
+  .heading-one {
+    font-size: var(--font36);
+  }
+
+  .heading-two {
+    font-size: var(--font32);
+  }
+
+}

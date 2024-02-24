@@ -124,7 +124,6 @@ hr {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin: var(--spacing15);
   font-family: var(--main-font);
 }
 

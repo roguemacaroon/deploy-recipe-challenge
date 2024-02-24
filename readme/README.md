@@ -33,8 +33,8 @@ The challenge is to build out a recipe page and get it looking as close to the d
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github repository](https://github.com/roguemacaroon/deploy-recipe-challenge)
+- Live Site URL: [github pages live solution](https://roguemacaroon.github.io/deploy-recipe-challenge/)
 
 ## My process
 After carefully reviewing the designs, I started by creating my known variables in CSS and added in my normalize file. 

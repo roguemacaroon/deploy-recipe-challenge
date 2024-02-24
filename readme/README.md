@@ -23,7 +23,7 @@ This project is categorized under the "newbie" challenge section. It needs to be
 
 ## The challenge
 
-The challenge is to build out a recipe page and get it looking as close to the design as possible. This challenge requires basic understanding of HTML and CSS.
+The challenge is to build out a recipe page and get it looking as close to the design as possible. This challenge requires basic understanding of HTML and CSS. The main goal is to have the dev focus on proper semantics.
 
 ### Screenshot
 

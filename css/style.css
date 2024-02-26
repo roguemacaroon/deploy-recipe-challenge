@@ -47,6 +47,7 @@ html {
   --spacing20: 20px;
   --spacing30: 30px;
   --spacing40: 40px;
+  --spacing120: 120px;
 }
 
 li {
@@ -124,7 +125,6 @@ hr {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin: var(--spacing15);
   font-family: var(--main-font);
 }
 
@@ -160,13 +160,12 @@ ol li::marker {
 /* nutrition section */
 .nutrition-details {
   display: grid;
-	grid-template-columns: 50% 50%;
-	padding: 10px 35px;
-	border-bottom: 1px solid var(--neutral-grey);
+  grid-template-columns: 50% 50%;
+  padding: 10px 35px;
+  border-bottom: 1px solid var(--neutral-grey);
 }
 .nutrition-details p {
   margin: 0;
-  
 }
 /* footer */
 
@@ -185,7 +184,7 @@ footer {
   body {
     background-color: var(--neutral-eggshell);
   }
-  
+
   .wrapper {
     width: 90%;
     max-width: 1000px;
@@ -194,7 +193,7 @@ footer {
   /* card is only visible after media query */
   .card {
     margin: 0 auto;
-    margin-top: var(--spacing40);
+    margin-top: var(--spacing120);
     width: 60%;
     padding: var(--spacing30);
     background-color: var(--neutral-white);
@@ -208,7 +207,6 @@ footer {
     border-radius: var(--spacing20);
     margin: 0 auto;
   }
-
 }
 @media screen and (min-width: 976px) {
   /* increase heading size */
@@ -219,5 +217,4 @@ footer {
   .heading-two {
     font-size: var(--font32);
   }
-
 }

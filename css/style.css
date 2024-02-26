@@ -189,7 +189,15 @@ footer {
     width: 90%;
     max-width: 1000px;
   }
+  /* increase heading size */
+  h1,
+  .heading-one {
+    font-size: var(--font46);
+  }
 
+  .heading-two {
+    font-size: var(--font32);
+  }
   /* card is only visible after media query */
   .card {
     margin: 0 auto;
@@ -206,15 +214,5 @@ footer {
     max-width: 1000px;
     border-radius: var(--spacing20);
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 976px) {
-  /* increase heading size */
-  .heading-one {
-    font-size: var(--font36);
-  }
-
-  .heading-two {
-    font-size: var(--font32);
   }
 }

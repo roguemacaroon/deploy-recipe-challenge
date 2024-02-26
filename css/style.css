@@ -203,7 +203,7 @@ footer {
     margin: 0 auto;
     margin-top: var(--spacing120);
     width: 60%;
-    padding: var(--spacing30);
+    padding-top: var(--spacing30);
     background-color: var(--neutral-white);
     border-radius: var(--spacing10);
     max-width: 1000px;

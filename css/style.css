@@ -190,8 +190,7 @@ footer {
     max-width: 1000px;
   }
   /* increase heading size */
-  h1,
-  .heading-one {
+  h1 {
     font-size: var(--font46);
   }
 
